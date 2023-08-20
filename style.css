@@ -5,7 +5,7 @@
 }
 /*nav*/
 nav{
-    background-color: #000000;
+    background-color: #010108;
     width: 100%;
     height: 4rem;
     font-family: 'Titillium Web', sans-serif;
@@ -18,8 +18,7 @@ nav ul{
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: large;
- 
+    font-size: 1.2rem;
     list-style: none;
     display: flex;
 
@@ -39,7 +38,7 @@ font-weight: 100;
 }
 
 /*main*/
-
+/* banner  */
 .back{
     background-image: url("ressource/fond.jpg");
     background-repeat: no-repeat;
@@ -50,14 +49,19 @@ font-weight: 100;
     text-align: center;
 
 }
+.titre_box h2{
+text-decoration: underline;
+}
 
 .titre_box{
+  
     position: absolute;
  margin: 9rem 0rem 0rem 27rem;
     font-family: 'Great Vibes', cursive;
     color: rgb(255, 255, 255);
     z-index: 2;
     text-align: center;
+  
 }
 .titre_box h1{
     font-size: 8rem;
@@ -71,6 +75,138 @@ font-weight: 100;
 
     height: 450px;
     width: 100%;
-    opacity: 60%;
+    opacity: 55%;
     background-color: black;
 }
+
+
+
+
+
+/* artiste  */
+.artiste_box{
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+
+  background-color: #010108;
+    /* margin: 2rem 0rem; */
+  
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.artiste_box img{
+    filter: grayscale(0);
+    margin: 0rem 1rem;
+}
+.artiste_bio{
+ color: #ffffff;
+    text-align: left;
+    height: 550px;
+    font-family: 'Titillium Web', sans-serif;
+    width: 50%;
+}
+.artiste_bio h2{
+    font-family: 'Great Vibes', cursive;
+
+font-size: 4rem;
+margin: 2rem 0rem;
+}
+.artiste_bio p{
+    font-size: 1.5rem;
+}
+
+/* card  */
+.box_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0rem;
+}
+
+.card{
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  display: flex;
+margin: 0rem 2rem;
+  border-radius: 25px;
+    height: 30rem;
+    width: 20rem;
+    background-color: #000000;
+   
+}
+
+img{
+    vertical-align: middle;
+}
+.card img {
+    
+   width: 100%;
+   height: 100%;
+  position: relative;
+  transition: 0.3s;
+ 
+}
+
+ /* overlay  */
+.card .overlay{
+    position: absolute;
+   
+    background-color: rgba(0,0,0,.5);
+    font-size: 2.5rem;
+    height: 30rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: 0.3s;
+}
+
+.card:hover .overlay{
+    transform: translateX(0) ;
+    
+}
+.card:hover img{
+    filter: grayscale(1);
+}
+
+
+/* soins */
+.box_soins{
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+
+    background-color: #010108;
+    color: #ffffff;
+}
+.soins_bio{
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+.soins_bio li{
+    width: 80%;
+    margin: 0rem 2rem 2rem 3rem;
+   
+}
+.soins_bio ol{
+    text-align: left;
+    align-items: start;
+    height: 500px;
+    text-align: left;
+    columns:2;
+    
+
+
+}
+
+.soins_bio h2{
+  
+    font-family: 'Great Vibes', cursive;
+
+    font-size: 4rem;
+    margin: 0rem 3rem;
+    padding: 2rem 0rem;
+    }
